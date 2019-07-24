@@ -1,44 +1,15 @@
 # futurej
 
-FIXME: description
+Este ejemplo muestra, el tiempo que demora en ejecutar un proceso de manera secuencial
+x cantidad de veces y el tiempo que demora en ejecutar ese proceso de manera concurrente
+x cantidad de veces.
+Para el ejemplo utilizamos un numero de 6 llamadas, que coincide con los nucleos
+que contiene el procesador donde lo estamos corriendo.
+De esta forma se puede observar lo facil que es correr procesos concurrentes de forma
+paralela y utilizar todos los nucleos del procesador
 
-## Installation
-
-Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
+lein run
 
-    $ java -jar futurej-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.

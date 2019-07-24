@@ -7,7 +7,10 @@
   ; defino una promesa de algo que se tiene que calcular en algun momento
   (def unapromesa (promise))
   
-  ; voy a calcular la promesa, en este caso le asigno simplemente un valor
+  ; voy a calcular la promesa, se le puede asignar
+  ;un valor
+  ;el resultado de una funcion
+  ; una funcion, etc
   (future
     (Thread/sleep 5000) 
     ;(deliver unapromesa 42) ; asigno un valor 
@@ -27,7 +30,7 @@
   (println @unapromesa)
   (println "vuelvo a preguntar si esta realizada la respuesta es true")
   (println(realized? unapromesa))
-  (println(@unapromesa 5)))
+  (println(@unapromesa 5))) ; al devolver la funcion cuadrado, esta sentencia dara 25
   
   
 

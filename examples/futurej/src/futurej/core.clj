@@ -2,7 +2,7 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  
   [& args]
 
   
@@ -11,12 +11,13 @@
   ; (println "I'll print immediately")
   
   
-  
+  ; funcion recurrente sencilla
   (defn sum-mundane [x y]
     (if (= 0 y)
       x
       (recur (inc x) (dec y))))
   
+  ;llamada secuencial
   (defn secuencial [x]
     (sum-mundane 1 x)
     (sum-mundane 1 x)
@@ -25,6 +26,7 @@
     (sum-mundane 1 x)
     (sum-mundane 1 x))
   
+  ;llamada concurrente
   (defn concurrente [x]
     (def fa (future(sum-mundane 1 x)))
     (def fb (future(sum-mundane 1 x)))
@@ -35,8 +37,8 @@
     (seq[@fa @fb @fc @fd @fe @ff]))
   
   
-  (println(time(secuencial 1234567890)))
-  (println(time(concurrente 1234567890))))
+  (println(time(secuencial 123456789)))  
+  (println(time(concurrente 123456789)))) 
  
 
   
